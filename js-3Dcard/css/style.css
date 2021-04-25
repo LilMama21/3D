@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    /* perspective задет расстояние по оси Z
+    preserve-3d дочерние элементы будут отоброжаться 
+    в 3d плоскости */
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.card--item {
+    width: 250px;
+    height: 350px;
+    transition: transform 0.2;
+}
